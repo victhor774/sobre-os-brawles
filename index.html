@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resposive Pepsi Website Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <section class="sec">
         <header>
-           <a href="#"><img src="images/logo.png" class="logo"></a>
+           <a href="#"><img src="./assets/img/peps/logo.png" class="logo"></a>
            <div class="toggleMenu" onclick="menuToggle();"></div>
            <ul class="navigation">
                <li><a href="#">Home</a></li>
@@ -26,35 +30,22 @@
                 <a href="#">View All Products</a>
             </div>
             <div class="imgBox">
-                <img src="images/pepsi001.png" alt="" class="pepsi">
+                <img src="/assets/img/peps/pepsi001.png" alt="" class="pepsi">
             </div>
         </div>
         <ul class="thumb">
-            <li><img src="images/pepsi001.png" onclick="imgSlider('images/pepsi001.png');chageBgColor('#0062be')" alt=""></li>
-            <li><img src="images/pepsi002.png" onclick="imgSlider('images/pepsi002.png');chageBgColor('#e60c2c')" alt=""></li>
-            <li><img src="images/pepsi003.png" onclick="imgSlider('images/pepsi003.png');chageBgColor('#1e1e1e')" alt=""></li>
+            <li><img src="/assets/img/peps/pepsi001.png" onclick="imgSlider('assets/img/peps/pepsi001.png');chageBgColor('#0062be')" alt=""></li>
+            <li><img src="/assets/img/peps/pepsi002.png" onclick="imgSlider('assets/img/peps/pepsi002.png');chageBgColor('#e60c2c')" alt=""></li>
+            <li><img src="/assets/img/peps/pepsi003.png" onclick="imgSlider('assets/img/peps/pepsi003.png');chageBgColor('#1e1e1e')" alt=""></li>
         </ul>
         <ul class="sci">
-            <li><a href=""><img src="/images/facebook.png" alt=""></a></li>
-            <li><a href=""><img src="/images/twitter.png" alt=""></a></li>
-            <li><a href=""><img src="/images/instagram.png" alt=""></a></li>
+            <li><a href=""><img src="/assets/img/peps/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="/assets/img/peps/twitter.png" alt=""></a></li>
+            <li><a href=""><img src="/assets/img/peps/instagram.png" alt=""></a></li>
         </ul>
     </section>
-    <script type="text/javascript">
-        function imgSlider (anything){
-            document.querySelector('.pepsi').src = anything;
-        }
-        function chageBgColor(color){
-            const sec = document.querySelector('.sec');
-            sec.style.backgroundColor = color;
-        }
-
-        function menuToggle(){
-            const toggleMenu = document.querySelector('.toggleMenu');
-            const navigation = document.querySelector('.navigation');
-            toggleMenu.classList.toggle('active');
-            navigation.classList.toggle('active');
-        }
-    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
