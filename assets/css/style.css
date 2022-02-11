@@ -65,6 +65,14 @@ header ul li a{
     max-width: 600px;
 }
 
+.content .textBox p{
+    display: none;
+}
+
+.content .textBox p.active{
+    display: block;
+}
+
 .content .textBox h2{
     color: #fff;
     font-size: 4em;

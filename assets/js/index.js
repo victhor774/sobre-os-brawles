@@ -20,3 +20,14 @@ function menuToggle(){
     toggleMenu.classList.toggle('active');
     navigation.classList.toggle('active');
 }
+
+const textBox = document.querySelector('.textBox');
+const texts = textBox.getElementsByTagName('p');
+var j = 0;
+
+function nextText() {
+    console.log('Mudando o texto ...', texts);
+    texts[j].classList.remove('active');
+    j = (j + 1) % texts.length;
+    texts[j].classList.add('active');
+}
